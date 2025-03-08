@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:projeto_aula/post.dart';
 
 class CardPhoto extends StatelessWidget {
-  const CardPhoto({super.key});
+  final Post post;
+  const CardPhoto({super.key, required this.post});
 
   @override
   Widget build(BuildContext context) {
@@ -20,12 +22,12 @@ class CardPhoto extends StatelessWidget {
                 height: 20,
                 width: 20,
                 child: Image.network(
-                  "https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2022/12/DES20221218234.jpg",
+                  post.user.urlPhoto,
                   fit: BoxFit.cover,
                 ),
               ),
               Text(
-                "Lionel Messi",
+                post.user.nickname,
                 style: TextStyle(
                   color: Colors.white,
                   fontWeight: FontWeight.bold
@@ -35,7 +37,7 @@ class CardPhoto extends StatelessWidget {
             ],
           ),
           Image.network(
-            "https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2023/02/GettyImages-1470059015.jpg",
+            post.urlPhoto,
             width: MediaQuery.of(context).size.width * 0.8,
           )
         ],
