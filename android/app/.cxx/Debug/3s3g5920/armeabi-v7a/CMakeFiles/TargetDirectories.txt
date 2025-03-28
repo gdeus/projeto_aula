@@ -1,0 +1,2 @@
+/Users/dedeus.gabriel/Documents/projects/projeto_aula/android/app/.cxx/Debug/3s3g5920/armeabi-v7a/CMakeFiles/edit_cache.dir
+/Users/dedeus.gabriel/Documents/projects/projeto_aula/android/app/.cxx/Debug/3s3g5920/armeabi-v7a/CMakeFiles/rebuild_cache.dir

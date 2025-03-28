@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:projeto_aula/amiibos/amibo_screen.dart';
 import 'package:projeto_aula/home_screen.dart';
 import 'package:projeto_aula/state_example.dart';
 import 'package:projeto_aula/state_example_reverse.dart';
@@ -46,6 +47,15 @@ class _InitialScreenState extends State<InitialScreen> {
               );
             }, 
             child: Text('Aula 03 - Gerenciamento de estado reverso')
+          ),
+          TextButton(
+            onPressed: (){
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => const AmiiboScreen()),
+              );
+            }, 
+            child: Text('Aula 04 - Consumo de APIs Amiibo')
           )
         ],
       ),
